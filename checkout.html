@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>Checkout | Zareen Arts</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <a class="logo" href="index.html">
+        Zareen <span>Arts</span>
+    </a>
+
+    <nav>
+        <a href="index.html">Home</a>
+
+        <a href="products.html?cat=cakes">
+            Cakes
+        </a>
+
+        <a href="products.html?cat=resin">
+            Resin Art
+        </a>
+    </nav>
+
+    <a class="cart-link" href="cart.html">
+        Cart
+        <span id="cart-count">0</span>
+    </a>
+
+</header>
+
+<main class="section checkout-page">
+
+    <p class="eyebrow">
+        ORDER DETAILS
+    </p>
+
+    <h1>
+        Complete Your Order
+    </h1>
+
+    <form
+        id="checkout-form"
+        class="checkout-form"
+    >
+
+        <div class="form-row">
+
+            <input
+                name="customer_name"
+                placeholder="Full name"
+                required
+            >
+
+            <input
+                name="phone"
+                placeholder="Phone number"
+                required
+            >
+
+        </div>
+
+        <div class="form-row">
+
+            <input
+                name="email"
+                type="email"
+                placeholder="Email"
+            >
+
+            <input
+                name="city"
+                placeholder="City"
+                required
+            >
+
+        </div>
+
+        <textarea
+            name="address"
+            placeholder="Complete delivery address"
+            required
+        ></textarea>
+
+        <input
+            name="delivery_date"
+            type="date"
+            required
+        >
+
+        <select
+            name="payment_method"
+            required
+        >
+
+            <option value="">
+                Payment method
+            </option>
+
+            <option value="Cash on Delivery">
+                Cash on Delivery
+            </option>
+
+            <option value="Bank Transfer">
+                Bank Transfer
+            </option>
+
+        </select>
+
+        <div
+            id="bank-details"
+            class="bank-details"
+            style="display:none;"
+        >
+
+            <h3>
+                <i class="fa-solid fa-building-columns"></i>
+                Bank Transfer Details
+            </h3>
+
+            <p>
+                Please transfer the total amount
+                to the following account:
+            </p>
+
+            <div class="bank-info">
+
+                <div>
+                    <span>Bank Name</span>
+                    <strong>Mashriq Pakistan</strong>
+                </div>
+
+                <div>
+                    <span>Account Title</span>
+                    <strong>Muhammad Hassan</strong>
+                </div>
+
+                <div>
+                    <span>Account Number</span>
+                    <strong>089120139177</strong>
+                </div>
+
+                <div>
+                    <span>IBAN</span>
+                    <strong>PK05MSHQ0000089120139177</strong>
+                </div>
+
+            </div>
+
+            <div class="mobile-payment">
+
+                <h4>
+                    Other Payment Options
+                </h4>
+
+                <p>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+
+                    <strong>JazzCash:</strong>
+                    0303 4904218 — Zareen Shabir
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+
+                    <strong>Easypaisa:</strong>
+                    0303 4904218 — Zareen Shabir
+                </p>
+
+            </div>
+
+            <div class="payment-note">
+
+                <i class="fa-solid fa-circle-info"></i>
+
+                After making the payment,
+                please keep your transaction/reference number.
+
+            </div>
+
+            <label>
+
+                Transaction / Reference Number
+
+                <input
+                    type="text"
+                    name="payment_reference"
+                    placeholder="Enter transaction/reference number"
+                >
+
+            </label>
+
+        </div>
+
+        <textarea
+            name="custom_notes"
+            placeholder="Special instructions....."
+        ></textarea>
+
+        <button
+            class="btn"
+            type="submit"
+        >
+            Send Order to WhatsApp
+        </button>
+
+        <p class="payment-note">
+            Your order is not stored on this website. Clicking the button
+            opens WhatsApp with your complete order details. You only need
+            to press Send in WhatsApp.
+        </p>
+
+        <p
+            id="order-message"
+            class="message"
+        ></p>
+
+    </form>
+
+</main>
+
+<script src="js/products.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+
+</html>

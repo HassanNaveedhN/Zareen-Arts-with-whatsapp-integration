@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zareen Arts | Cakes & Resin Art</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">Zareen <span>Arts</span></a>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#cakes">Cakes</a>
+    <a href="#resin">Resin Art</a>
+    <a href="#reviews">Reviews</a>
+  </nav>
+  <a class="cart-link" href="cart.html">Cart <span id="cart-count">0</span></a>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <div>
+      <p class="eyebrow">HANDMADE • CUSTOM • MADE WITH LOVE</p>
+      <h1>Beautiful things,<br><em>made for you.</em></h1>
+      <p class="hero-text">Custom cakes and handmade resin art created specially for birthdays, weddings, gifts and memorable moments.</p>
+      <div class="hero-buttons">
+        <a class="btn" href="#cakes">Shop Cakes</a>
+        <a class="btn btn-light" href="#resin">Explore Resin Art</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="cake-card"><img src="images/front cake 1.1.jfif" alt="Cake" width="300"></div>
+      <div class="resin-card"><img src="images/resin front images 2.0.jfif" alt="Resin" width="250"></div>
+    </div>
+  </section>
+
+  <section class="section" id="cakes">
+    <div class="section-heading">
+      <div><p class="eyebrow">CATEGORY 01</p><h2>Fresh Cakes</h2></div>
+      <p>Choose a design or create your own.</p>
+    </div>
+    <div class="product-grid" id="cake-products"></div>
+  </section>
+
+  <section class="section soft" id="resin">
+    <div class="section-heading">
+      <div><p class="eyebrow">CATEGORY 02</p><h2>Resin Art</h2></div>
+      <p>Handmade pieces with your personal touch.</p>
+    </div>
+    <div class="product-grid" id="resin-products"></div>
+  </section>
+
+  <section class="custom-banner">
+    <div>
+      <p class="eyebrow">YOUR IDEA • OUR CRAFT</p>
+      <h2>Want something completely custom?</h2>
+      <p>Tell us your colors, theme, size, text and occasion. We will turn your idea into a handmade piece.</p>
+    </div>
+    <a class="btn" href="checkout.html?custom=1">Start Custom Order</a>
+  </section>
+
+  <section class="section" id="reviews">
+    <div class="section-heading">
+      <div><p class="eyebrow">CLIENT LOVE</p><h2>Customer Reviews</h2></div>
+    </div>
+    <div id="reviews-list" class="reviews-grid"></div>
+    <form id="review-form" class="review-form">
+      <h3>Leave a review</h3>
+      <div class="form-row">
+        <input name="name" placeholder="Your name" required>
+        <select name="rating" required>
+          <option value="5">★★★★★</option>
+          <option value="4">★★★★☆</option>
+          <option value="3">★★★☆☆</option>
+          <option value="2">★★☆☆☆</option>
+          <option value="1">★☆☆☆☆</option>
+        </select>
+      </div>
+      <textarea name="comment" placeholder="Tell us about your experience..." required></textarea>
+      <button class="btn" type="submit">Submit Review</button>
+      <p id="review-message" class="message"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-brand">
+    <h3>Zareen Arts</h3>
+    <p>Custom cakes & handmade resin art.</p>
+    <p>Made with ❤️ & 🍵</p>
+  </div>
+
+  <div class="footer-links">
+    <h4>Quick Links</h4>
+    <a href="index.html">Home</a>
+    <a href="products.html">Shop</a>
+    <a href="cart.html">Cart</a>
+  </div>
+
+  <div class="footer-social">
+    <h4>Connect With Us</h4>
+
+    <div class="social-icons">
+
+      <a
+        href="https://www.instagram.com/zareen.shabbir/?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="
+        target="_blank"
+        rel="noopener"
+        aria-label="Instagram"
+      >
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+
+      <a
+        href="https://wa.me/923034904218"
+        target="_blank"
+        rel="noopener"
+        aria-label="WhatsApp"
+      >
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+
+      <a
+        href="https://www.facebook.com/share/1HcWZZcPGT/"
+        target="_blank"
+        rel="noopener"
+        aria-label="Facebook"
+      >
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+
+      <a
+        href="mailto:zareenshabbir5@gmail.com"
+        aria-label="Email"
+      >
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+
+    </div>
+
+    <p class="footer-contact">
+      <i class="fa-solid fa-phone"></i>
+      0303 4904218
+    </p>
+
+    <p class="footer-contact">
+      <i class="fa-solid fa-envelope"></i>
+   zareenshabbir5@gmail.com
+     </p>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Zareen Arts. All rights reserved.</p>
+  </div>
+</footer>
+<script src="js/products.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
